@@ -2,6 +2,7 @@ package by.epam.main;
 
 import java.util.Arrays;
 
+import by.epam.arrayaverage.arrayAverage;
 import by.epam.arraycreate.createArray;
 import by.epam.arraysort.arraySort;
 
@@ -19,7 +20,13 @@ public class Main {
 		
 		sourseArray = sortArray.bubblesort(sourseArray);
 		
-		System.out.print(Arrays.toString(sourseArray));
+		System.out.println(Arrays.toString(sourseArray));
+		
+		arrayAverage averageArray = new arrayAverage();
+		
+		double sourseArrayAverage = averageArray.average(sourseArray);
+		
+		System.out.print(sourseArrayAverage);
 		
 	}
 	
