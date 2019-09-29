@@ -7,6 +7,7 @@ public class ArraySum {
         double sum = 0;
 
         for(double element : array ) {
+
             sum+= element;
         }
         return sum;

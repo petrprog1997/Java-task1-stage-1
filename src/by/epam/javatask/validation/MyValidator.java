@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class MyValidator {
 
-    public static final String REGEXP = "(\\d+|\\s*(\\s*)(?:[.-]*))+";
+    public static final String REGEXP = "^(\\s*[+-]?\\d+(\\.\\d+)?(d|D)?(\\s+|$))+$";
 
     public static boolean isValid(String string) {
 
@@ -15,11 +15,8 @@ public class MyValidator {
 
         boolean found = matcher.matches();
 
-        if (found) {
-            return true;
-        } else {
-            return false;
-        }
+            return found;
+
     }
 }
 

@@ -1,17 +1,17 @@
 package by.epam.javatask.util;
 
 import java.util.Random;
-import java.util.stream.IntStream;
+import java.util.stream.DoubleStream;
 
 public class ArrayCreator {
 
-    public int[] createArray() {
+    public double[] createArray() {
 
         Random random = new Random();
 
-        IntStream Streamarray = random.ints(random.nextInt(15)+1, -20,25);
+        DoubleStream StreamArray = random.doubles(random.nextInt(15)+1, -20,25);
 
-        int[] array = Streamarray.toArray();
+        double[] array = StreamArray.toArray();
 
         return array;
 

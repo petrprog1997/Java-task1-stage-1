@@ -2,7 +2,7 @@ package by.epam.javatask.sort;
 
 public class ArraySorter {
 
-    public static double[] bubbleSort(double[] array) {
+    public double[] bubbleSort(double[] array) {
 
         boolean sorted = false;
         double temp;

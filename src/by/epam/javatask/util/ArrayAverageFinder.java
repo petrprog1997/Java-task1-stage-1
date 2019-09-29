@@ -13,7 +13,7 @@ public class ArrayAverageFinder {
         }
 
         double average = sum/array.length;
-        System.out.println(average);
+
         return average;
     }
 }
