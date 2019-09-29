@@ -19,7 +19,7 @@ public class MyParser {
 
         try {
 
-            File file = new File("C:\\Users\\ПЁТР\\IdeaProjects\\java-task-1\\ReadFromThisFile.txt");
+            File file = new File("ReadFromThisFile.txt");
 
             FileReader filereader = new FileReader(file);
 
