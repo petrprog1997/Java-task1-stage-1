@@ -1,7 +1,7 @@
 package by.epam.javatask.parse;
 
 import by.epam.javatask.convert.Converter;
-import by.epam.javatask.myexception.CantFileException;
+import by.epam.javatask.myexception.CantFindFileException;
 import by.epam.javatask.myexception.FileNotClosableException;
 import by.epam.javatask.myexception.NotAccessToFileException;
 import by.epam.javatask.validation.MyValidator;
@@ -37,7 +37,7 @@ public class MyParser {
 
         } catch (FileNotFoundException e) {
 
-            throw new CantFileException("Файл не найден");
+            throw new CantFindFileException("Файл не найден");
 
         }
         catch (IOException e) {
