@@ -6,14 +6,14 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class TXTReader {
-    
+
     public ArrayList<String> readFromFile(String path) {
         ArrayList<String> arrayList = new ArrayList<>();
         BufferedReader reader = null;
         try {
             File file = new File(path);
-            FileReader filereader = new FileReader(file);
-            reader = new BufferedReader(filereader);
+            FileReader fileReader = new FileReader(file);
+            reader = new BufferedReader(fileReader);
             String line;
             while ((line = reader.readLine()) != null) {
                 arrayList.add(line);
