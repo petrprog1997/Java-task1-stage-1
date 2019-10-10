@@ -6,8 +6,8 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class TXTReader {
-
-    public  ArrayList<String> readFromFile(String path) {
+    
+    public ArrayList<String> readFromFile(String path) {
         ArrayList<String> arrayList = new ArrayList<>();
         BufferedReader reader = null;
         try {
