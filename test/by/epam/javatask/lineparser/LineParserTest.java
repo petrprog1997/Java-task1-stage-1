@@ -1,10 +1,10 @@
-package by.epam.javatask.convert;
+package by.epam.javatask.lineparser;
 
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class ConverterTest {
+public class LineParserTest {
 
 
     private static double[] expectedArray = {1, 4, 2, 1, 4.2, 2.3};
@@ -12,7 +12,7 @@ public class ConverterTest {
 
     @Test
     public void ShouldReturnTrue() {
-        double[] actualArray = Converter.convert(actualString);
+        double[] actualArray = LineParser.parse(actualString);
         assertEquals(expectedArray, actualArray);
     }
 }

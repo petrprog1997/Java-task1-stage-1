@@ -6,13 +6,13 @@ import static org.testng.Assert.assertEquals;
 
 public class ArrayMaxTest {
 
-    private ArrayMax arrayMax = new ArrayMax();
+    private  ArrayUtil arrayUtil = new ArrayUtil();
 
     @Test
     public void shouldReturnMax() {
         double expectedMax = 123;
         double[] actualArray = {2,3,0.4,-2331, 123, 2, 0.1233, 4.2, 123};
-        double actualMax = arrayMax.findMax(actualArray);
+        double actualMax = arrayUtil.findMax(actualArray);
         assertEquals(expectedMax,actualMax);
     }
 }
