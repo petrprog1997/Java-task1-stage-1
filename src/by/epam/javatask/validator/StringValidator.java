@@ -3,7 +3,7 @@ package by.epam.javatask.validator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MyValidator {
+public class StringValidator {
 
     public static final String REGEXP = "^(\\s*[+-]?\\d+(\\.\\d+)?(d|D)?(\\s+|$))+$";
 
